@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta charset="utf-8">
+  <title>Day Log</title>
+
+  <!-- Request fonts and styles -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"> -->
+  <!-- <link rel="stylesheet" href="style/main.css" /> -->
+
+  <!-- Manifest -->
+  <!-- <link rel="manifest" href="manifest.json"> -->
+  <!-- TODO: a2hs tags for other browsers -->
+
+</head>
+
+<body>
+
+  <!-- <header>
+    <ul class="navbar">
+      <li><a href="#home">Dashboardr</a></li>
+      <li style="float:right; padding: 12px 16px"><img src="images/icon/icon.svg" alt="profile icon" /></li>
+    </ul>
+  </header> -->
+
+  <main>
+    <h1>Day Log</h1>
+
+
+      <!-- <p id="offline" class="message warn">You're offline and viewing stored data.</p>
+      <p id="no-data" class="message error">You're offline and local data is unavailable.</p>
+      <p id="data-saved" class="message success">Server data was saved for offline mode</p>
+      <p id="save-error" class="message error">Server data couldn't be saved offline :(</p> -->
+
+      <br><br>
+
+      <section>
+
+        <form action="#" method="post">
+          <label class="label" for="log-note">Note:</label>
+          <textarea id="log-note" name="log-note"></textarea>
+          <button id="add-log-button">Add log</button>
+        </form>
+
+    </section>
+
+    <section>
+
+      <ul id="log-container" class="log-container"></ul>
+
+    </section>
+
+  </main>
+
+  <!-- <footer>
+
+    <div id="social">
+      <a href="#">Twitter</a>
+      <a href="#">Facebook</a>
+      <a href="#">Google+</a>
+      <a href="#">Digg</a>
+    </div>
+
+  </footer> -->
+
+  <!-- <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function(registration) {
+          console.log('Service Worker registration successful with scope: ',
+          registration.scope);
+        })
+        .catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+    }
+  </script> -->
+
+  <script src="js/idb-promised.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
